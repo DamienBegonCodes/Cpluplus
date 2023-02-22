@@ -1,0 +1,6 @@
+.vscode
+*.exe
+solution
+*.pdf
+*.dot
+# .gitignore
