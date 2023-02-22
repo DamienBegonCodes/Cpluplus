@@ -3,4 +3,5 @@
 solution
 *.pdf
 *.dot
-# .gitignore
+.gitignore
+CMakeFiles
