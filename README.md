@@ -1,7 +1,7 @@
 
 # Damien's C++ repository
 
-## Welcome on my C++ repository
+## Welcome to my C++ repository
 
 You will find all my work in C++ organised in different folders :
 
