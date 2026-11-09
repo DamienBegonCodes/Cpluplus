@@ -5,6 +5,7 @@
 
 class ModernChair : public Chair
 {
+public:
     ModernChair()
     {
         this->height = 115;

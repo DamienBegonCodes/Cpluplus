@@ -1,6 +1,9 @@
-#include "ModernChair.hpp"
-#include "VictorianFurnitureFactory.hpp"
+#include "ModernFurnitureFactory.hpp"
+#include "Client.hpp"
+#include "Chair.hpp"
+
 #include <iostream>
+
 
 
 int main()
@@ -8,11 +11,12 @@ int main()
     // ModernChair mc;
     // std::cout << std::boolalpha << "Does modern chair has legs ? --> " << mc.has_legs() << std::endl;
 
-    FurnitureFactory * ff(new VictorianFurnitureFactory);
-    Chair * vc(ff->create_chair());
+    Client client_1(new ModernFurnitureFactory());
+    Chair * chair(client_1.order_chair());
 
-    std::cout << std::boolalpha << "Does the chair from victorian furniture factory has legs ? --> " << vc->has_legs() << std::endl;
-    
+    std::cout << std::boolalpha << "Does the chair has legs ? --> " << chair->has_legs() << std::endl;
+
+    delete chair;
 
     return 0;
 }
